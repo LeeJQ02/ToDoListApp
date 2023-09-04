@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1480.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.331" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.todolist.view.LoginController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:resources/images/loginbackground.jpg" />
+         </image></ImageView>
+      <Label layoutX="475.0" layoutY="150.0" text="ToDo List Login" textFill="#1c56c3">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="390.0" layoutY="245.0" prefHeight="35.0" prefWidth="500.0" promptText="Username" />
+      <Button alignment="CENTER" layoutX="565.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="30.0" prefWidth="150.0" text="Login" />
+      <PasswordField fx:id="passwordField" layoutX="390.0" layoutY="316.0" prefHeight="35.0" prefWidth="500.0" promptText="Password" />
+   </children>
+</AnchorPane>
